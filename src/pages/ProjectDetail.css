@@ -1,0 +1,189 @@
+.detail__breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  margin-bottom: 3rem;
+}
+.detail__breadcrumb a {
+  color: var(--color-primary);
+  transition: opacity var(--transition-base);
+}
+.detail__breadcrumb a:hover { opacity: 0.75; }
+
+/* ── Header ────────────────────────────────────────────── */
+.detail__header { margin-bottom: 3.5rem; }
+
+.detail__meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.detail__tag {
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  font-weight: 700;
+  background: rgba(150,0,180,0.12);
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid rgba(150,0,180,0.3);
+}
+
+.detail__year {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+}
+
+.detail__title {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 8vw, 6rem);
+  letter-spacing: 0.03em;
+  line-height: 1;
+  margin-bottom: 0.75rem;
+}
+
+.detail__client {
+  font-size: 0.875rem;
+  color: var(--color-muted);
+  margin-bottom: 1rem;
+}
+.detail__client strong { color: var(--color-off-white); font-weight: 500; }
+
+.detail__desc {
+  font-size: 1rem;
+  color: var(--color-muted);
+  line-height: 1.75;
+  max-width: 640px;
+}
+
+/* ── Tabs ──────────────────────────────────────────────── */
+.detail__tabs {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 0;
+}
+
+.tab-btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--color-muted);
+  border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+  border: 1px solid transparent;
+  border-bottom: none;
+  position: relative;
+  top: 1px;
+  transition: all var(--transition-base);
+}
+
+.tab-btn:hover {
+  color: var(--color-off-white);
+  background: var(--color-surface);
+}
+
+.tab-btn--active {
+  color: var(--color-off-white);
+  background: var(--color-surface);
+  border-color: var(--color-border);
+  border-bottom-color: var(--color-surface);
+}
+
+/* ── Content ───────────────────────────────────────────── */
+.detail__content-header {
+  margin-bottom: 2rem;
+}
+
+.detail__sheet-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  letter-spacing: 0.04em;
+  margin-bottom: 0.5rem;
+}
+
+.detail__sheet-desc {
+  font-size: 0.9rem;
+  color: var(--color-muted);
+  line-height: 1.7;
+  max-width: 600px;
+}
+
+/* ── Gallery ───────────────────────────────────────────── */
+.sheet-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.25rem;
+}
+
+.sheet-gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  background: var(--color-surface-2);
+}
+.sheet-gallery img:hover {
+  transform: scale(1.02);
+  box-shadow: var(--glow-soft);
+}
+
+.detail-img-ph {
+  height: 260px;
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+.detail-img-ph svg { width: 100%; height: 100%; stroke: rgba(150,0,180,0.18); }
+
+.sheet-gallery--empty {
+  position: relative;
+}
+
+.sheet-gallery__hint {
+  grid-column: 1 / -1;
+  font-size: 0.8rem;
+  color: var(--color-muted);
+  text-align: center;
+  padding: 1rem;
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-sm);
+}
+
+.sheet-gallery__hint code {
+  font-family: monospace;
+  background: rgba(150,0,180,0.1);
+  padding: 0.1em 0.4em;
+  border-radius: 3px;
+  color: var(--color-primary);
+}
+
+.model3d-viewer {
+  width: 100%;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface-2);
+}
+
+model-viewer {
+  width: 100%;
+  height: 600px;
+  background: var(--color-surface-2);
+  --progress-bar-color: var(--color-primary);
+}
+
+@media (max-width: 600px) {
+  .tab-btn { padding: 0.6rem 1rem; font-size: 0.8rem; }
+  .sheet-gallery { grid-template-columns: 1fr; }
+}
