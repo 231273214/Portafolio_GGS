@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { NavLink, Link, useNavigate, useLocation } from 'react-router-dom'
+import logo from '/GOOD-GODS--BLANCO.png'
 import './Navbar.css'
 
 export default function Navbar() {
