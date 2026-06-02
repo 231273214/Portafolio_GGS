@@ -46,13 +46,13 @@ export default function Home() {
                 className="hero__img hero__img--left" 
               />
               <img 
-                src={`${baseUrl}projects/proyect-1/Poses_Dinamicas/PoseDinamica.png`} 
+                src={`${baseUrl}projects/project-3/Poses-Dinamicas/PoseDinamica.png`} 
                 alt="Imagen principal" 
                 className="hero__img hero__img--main" 
               />
               
               <img 
-                src={`${baseUrl}Galery/PoseDinamica1.png`} 
+                src={`${baseUrl}projects/project-4/Posedinamica.png`} 
                 alt="Imagen secundaria derecha" 
                 className="hero__img hero__img--right" 
               />

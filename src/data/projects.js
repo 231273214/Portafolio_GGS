@@ -55,7 +55,7 @@ export const projects = [
     year: 2025,
     description:
       'Creación de 1 personaje para un videojuego de plataformas en 3D, sigilo y rompecabezas con una estética cartoon.',
-    coverImage: `${baseUrl}projects/project-3/Model-sheet/ModelFrontal - copia.png`,
+    coverImage: `${baseUrl}projects/project-3/Poses-Dinamicas/PoseDinamica.png`,
     sheets: [
       { type: 'model_sheet',      label: 'Model Sheet',      images: [
         `${baseUrl}projects/project-3/Model-sheet/ModelFrontal.png`,
@@ -88,11 +88,17 @@ export const projects = [
     year: 2026,
     description:
       'Este personaje se uso para un cortometraje animado de aventura y comedia donde este compañero usa su astucia y agilidad para infiltrarse en la megacorporación y rescatar a su colonia.',
-    coverImage: null,
+    coverImage: `${baseUrl}projects/project-4/Posedinamica.png`,
     sheets: [
-      { type: 'model_sheet',      label: 'Model Sheet',      images: [] },
-      { type: 'expression_sheet', label: 'Expression Sheet', images: [] },
-      { type: 'dynamic_poses',    label: 'Poses Dinámicas',  images: [] },
+      { type: 'model_sheet',      label: 'Model Sheet',      images: [
+         `${baseUrl}projects/project-4/MOdelsheet.png`,
+      ] },
+      { type: 'expression_sheet', label: 'Expression Sheet', images: [
+        `${baseUrl}projects/project-4/Expressioni.png`,
+      ] },
+      { type: 'dynamic_poses',    label: 'Poses Dinámicas',  images: [
+        `${baseUrl}projects/project-4/Posedinamica.png`,
+      ] },
       { type: 'model_3d',         label: 'Modelo 3D',        images: [], modelFile: `${baseUrl}projects/project-4/Pose_1.glb` },
     ],
   },
