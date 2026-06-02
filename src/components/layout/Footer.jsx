@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import './Footer.css'
 
-export default function Footer() {
+export default function Footer({ onHablemosClick }) {
   return (
     <footer className="footer">
       <div className="footer__inner container">
@@ -15,7 +15,7 @@ export default function Footer() {
         <nav className="footer__nav">
           <Link to="/proyectos">Portafolio</Link>
           <Link to="/nosotros">Acerca de nosotros</Link>
-          <Link to="/contacto">Contacto</Link>
+          <a href="#contact" onClick={onHablemosClick}>Contacto</a>
         </nav>
       </div>
 

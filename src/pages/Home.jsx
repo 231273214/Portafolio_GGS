@@ -15,6 +15,8 @@ function ImagePlaceholder({ className = '', label = '' }) {
 }
 
 export default function Home() {
+  const baseUrl = import.meta.env.BASE_URL
+
   return (
     <div className="home">
 
@@ -36,12 +38,24 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Galería escalonada del wireframe */}
+          {/* Galería escalonada */}
           <div className="hero__gallery">
-            <ImagePlaceholder className="hero__img hero__img--main"  label="Imagen principal" />
-            <ImagePlaceholder className="hero__img hero__img--left"  label="Imagen secundaria izquierda" />
-            <ImagePlaceholder className="hero__img hero__img--right" label="Imagen secundaria derecha" />
-          </div>
+              <img 
+                src={`${baseUrl}Galery/PoseDinamica1.png`} 
+                alt="Imagen principal" 
+                className="hero__img hero__img--main" 
+              />
+              <img 
+                src={`${baseUrl}Galery/PoseDinamica1.png`} 
+                alt="Imagen secundaria izquierda" 
+                className="hero__img hero__img--left" 
+              />
+              <img 
+                src={`${baseUrl}Galery/PoseDinamica1.png`} 
+                alt="Imagen secundaria derecha" 
+                className="hero__img hero__img--right" 
+              />
+            </div>
         </div>
       </section>
 
@@ -99,7 +113,7 @@ export default function Home() {
       </section>
 
       {/* ── REDES Y CONTACTO ──────────────────────────── */}
-<section className="contact-section section-pad">
+<section  id="contact" className="contact-section section-pad">
   <div className="contact-section__glow" />
   <div className="container contact-section__inner">
 

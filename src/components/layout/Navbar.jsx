@@ -1,13 +1,12 @@
 import { useState, useEffect } from 'react'
-import { NavLink, Link, useNavigate, useLocation } from 'react-router-dom'
-import logo from '/GOOD-GODS--BLANCO.png'
+import { NavLink, Link, useLocation } from 'react-router-dom'
 import './Navbar.css'
 
-export default function Navbar() {
+export default function Navbar({ onHablemosClick }) {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
-  const navigate = useNavigate()
   const location = useLocation()
+  const baseUrl = import.meta.env.BASE_URL
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20)
@@ -15,17 +14,9 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
-  const handleHablemos = (e) => {
-    e.preventDefault()
+  const handleClick = (e) => {
     setMenuOpen(false)
-    if (location.pathname === '/') {
-      document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
-    } else {
-      navigate('/')
-      setTimeout(() => {
-        document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
-      }, 300)
-    }
+    onHablemosClick(e)   
   }
 
   return (
@@ -40,14 +31,14 @@ export default function Navbar() {
 
         {/* Center logo */}
         <Link to="/" className="navbar__logo" aria-label="Good Gods — inicio">
-          <img src="/GOOD-GODS--BLANCO.png" alt="Good Gods" className="navbar__logo-img" />
+          <img src={`${baseUrl}GOOD-GODS--BLANCO.png`} alt="Good Gods" className="navbar__logo-img"/>
         </Link>
 
         {/* Right links */}
         <ul className="navbar__links navbar__links--right">
           <li><NavLink to="/nosotros" className={({ isActive }) => isActive ? 'active' : ''}>Acerca de nosotros</NavLink></li>
           <li>
-            <a href="#contact" className="navbar__cta" onClick={handleHablemos}>Hablemos</a>
+            <a href="#contact" className="navbar__cta" onClick={handleClick}>Hablemos</a>
           </li>
         </ul>
 
@@ -66,7 +57,7 @@ export default function Navbar() {
         <NavLink to="/proyectos" onClick={() => setMenuOpen(false)}>Portafolio</NavLink>
         <NavLink to="/" end      onClick={() => setMenuOpen(false)}>Home</NavLink>
         <NavLink to="/nosotros"  onClick={() => setMenuOpen(false)}>Acerca de nosotros</NavLink>
-        <a href="#contact" className="navbar__cta" onClick={handleHablemos}>Hablemos</a>
+        <a href="#contact" className="navbar__cta" onClick={handleClick}>Hablemos</a>
       </div>
     </header>
   )
