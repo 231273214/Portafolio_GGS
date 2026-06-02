@@ -40,16 +40,17 @@ export default function Home() {
 
           {/* Galería escalonada */}
           <div className="hero__gallery">
-              <img 
-                src={`${baseUrl}Galery/PoseDinamica1.png`} 
-                alt="Imagen principal" 
-                className="hero__img hero__img--main" 
-              />
-              <img 
-                src={`${baseUrl}Galery/PoseDinamica1.png`} 
+            <img 
+                src={`${baseUrl}projects/proyect-1/model-sheet/ModeloFrontal - copia.png`} 
                 alt="Imagen secundaria izquierda" 
                 className="hero__img hero__img--left" 
               />
+              <img 
+                src={`${baseUrl}projects/proyect-1/Poses_Dinamicas/PoseDinamica.png`} 
+                alt="Imagen principal" 
+                className="hero__img hero__img--main" 
+              />
+              
               <img 
                 src={`${baseUrl}Galery/PoseDinamica1.png`} 
                 alt="Imagen secundaria derecha" 

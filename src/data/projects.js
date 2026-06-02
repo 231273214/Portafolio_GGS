@@ -45,31 +45,16 @@ export const projects = [
      
     ],
   },
+  
   {
     id: 2,
     slug: 'proyecto-2',
     name: 'Proyecto 2',
-    client: 'Empresa Cliente B',
-    category: 'Videojuegos',
-    year: 2024,
-    description:
-      'Diseño de personaje secundario para videojuego indie, con énfasis en legibilidad de silueta y poses de acción.',
-    coverImage: null,
-    sheets: [
-      { type: 'model_sheet',      label: 'Model Sheet',      images: [] },
-      { type: 'expression_sheet', label: 'Expression Sheet', images: [] },
-      { type: 'dynamic_poses',    label: 'Poses Dinámicas',  images: [] },
-    ],
-  },
-  {
-    id: 3,
-    slug: 'proyecto-3',
-    name: 'Proyecto 3',
-    client: 'Editorial XYZ',
-    category: 'Editorial',
+    client: 'Empresa XYZ',
+    category: 'Videojuego',
     year: 2025,
     description:
-      'Creación de cast de 5 personajes para novela gráfica, con guía de estilo y paletas de color por personaje.',
+      'Creación de 1 personaje para un videojuego de plataformas en 3D, sigilo y rompecabezas con una estética cartoon.',
     coverImage: `${baseUrl}projects/project-3/Model-sheet/ModelFrontal - copia.png`,
     sheets: [
       { type: 'model_sheet',      label: 'Model Sheet',      images: [
@@ -95,14 +80,14 @@ export const projects = [
     ],
   },
   {
-    id: 4,
-    slug: 'proyecto-4',
-    name: 'Proyecto 4',
-    client: 'Empresa Cliente D',
+    id: 3,
+    slug: 'proyecto-3',
+    name: 'Proyecto 3',
+    client: 'Empresa de animación',
     category: 'Animación',
-    year: 2025,
+    year: 2026,
     description:
-      'Personaje protagonista con modelo 3D rigeado para animación, incluyendo blendshapes faciales.',
+      'Este personaje se uso para un cortometraje animado de aventura y comedia donde este compañero usa su astucia y agilidad para infiltrarse en la megacorporación y rescatar a su colonia.',
     coverImage: null,
     sheets: [
       { type: 'model_sheet',      label: 'Model Sheet',      images: [] },
