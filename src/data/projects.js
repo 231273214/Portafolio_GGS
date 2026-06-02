@@ -1,3 +1,4 @@
+const baseUrl = import.meta.env.BASE_URL
 export const projects = [
   {
     id: 1,
@@ -13,9 +14,9 @@ export const projects = [
         type: 'model_sheet',
         label: 'Model Sheet',
         images: [
-          '/proyecto-1/model-sheet/ModeloFrontal.png',
-          '/proyecto-1/model-sheet/ModeloPerfil.png',
-          '/proyecto-1/model-sheet/ModeloPosterior.png',
+          `${baseUrl}projects/proyect-1/model-sheet/ModeloFrontal.png`,
+          `${baseUrl}projects/proyect-1/model-sheet/ModeloPerfil.png`,
+          `${baseUrl}projects/proyect-1/model-sheet/ModeloPosterior.png`,
         ],
       },
       {
@@ -61,7 +62,7 @@ export const projects = [
       { type: 'model_sheet',      label: 'Model Sheet',      images: [] },
       { type: 'expression_sheet', label: 'Expression Sheet', images: [] },
       { type: 'dynamic_poses',    label: 'Poses Dinámicas',  images: [] },
-      { type: 'model_3d',         label: 'Modelo 3D',        images: [], modelFile: 'proyecto-3/Pose_1_pj2.glb' },
+      { type: 'model_3d',         label: 'Modelo 3D',        images: [], modelFile: `${baseUrl}projects/project-3/Pose_1_pj2.glb` },
     ],
   },
   {
@@ -78,7 +79,7 @@ export const projects = [
       { type: 'model_sheet',      label: 'Model Sheet',      images: [] },
       { type: 'expression_sheet', label: 'Expression Sheet', images: [] },
       { type: 'dynamic_poses',    label: 'Poses Dinámicas',  images: [] },
-      { type: 'model_3d',         label: 'Modelo 3D',        images: [], modelFile: '/proyect-4/Pose_1.glb' },
+      { type: 'model_3d',         label: 'Modelo 3D',        images: [], modelFile: `${baseUrl}projects/project-4/Pose_1.glb` },
     ],
   },
 ]
