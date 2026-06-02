@@ -8,7 +8,7 @@ export const projects = [
     year: 2025,
     description:
       'Desarrollo integral de personaje principal: desde concepto hasta entregables listos para producción en animación 2D.',
-    coverImage: null, // ruta para imagen
+    coverImage: `${baseUrl}projects/proyect-1/model-sheet/ModeloFrontal - copia.png`, // ruta para imagen
     sheets: [
       {
         type: 'model_sheet',
@@ -33,8 +33,14 @@ export const projects = [
       },
       {
         type: 'dynamic_poses',
-        label: 'Poses Dinámicas',
-        images: [],
+        label: 'Poses Dinámicas y bocetos',
+        images: [
+          `${baseUrl}projects/proyect-1/Poses_Dinamicas/BocetoFrontal-1.png`,
+          `${baseUrl}projects/proyect-1/Poses_Dinamicas/BocetoLateral-1.png`,
+          `${baseUrl}projects/proyect-1/Poses_Dinamicas/BocetoPosterior-1.png`,
+          `${baseUrl}projects/proyect-1/Poses_Dinamicas/Silueta1.png`,
+          `${baseUrl}projects/proyect-1/Poses_Dinamicas/Silueta2.png`,
+        ],
       },
      
     ],
@@ -64,7 +70,7 @@ export const projects = [
     year: 2025,
     description:
       'Creación de cast de 5 personajes para novela gráfica, con guía de estilo y paletas de color por personaje.',
-    coverImage: null,
+    coverImage: `${baseUrl}projects/project-3/Model-sheet/ModelFrontal - copia.png`,
     sheets: [
       { type: 'model_sheet',      label: 'Model Sheet',      images: [
         `${baseUrl}projects/project-3/Model-sheet/ModelFrontal.png`,
@@ -79,7 +85,12 @@ export const projects = [
           `${baseUrl}projects/project-3/Expresion-sheet/Expression5.png`,
           `${baseUrl}projects/project-3/Expresion-sheet/Expression6.png`,
       ] },
-      { type: 'dynamic_poses',    label: 'Poses Dinámicas',  images: [] },
+      { type: 'dynamic_poses',    label: 'Poses Dinámicas y bocetos',  images: [
+        `${baseUrl}projects/project-3/Poses-Dinamicas/PoseDinamica.png`,
+        `${baseUrl}projects/project-3/Poses-Dinamicas/BocetoFrontal.png`,
+        `${baseUrl}projects/project-3/Poses-Dinamicas/BocetoLateral.png`,
+        `${baseUrl}projects/project-3/Poses-Dinamicas/BocetoPosterior.png`,
+      ] },
       { type: 'model_3d',         label: 'Modelo 3D',        images: [], modelFile: `${baseUrl}projects/project-3/Pose_1_pj2.glb` },
     ],
   },
