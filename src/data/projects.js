@@ -1,8 +1,6 @@
 // src/data/projects.js
 // "sheets" acepta: model_sheet | expression_sheet | dynamic_poses | model_3d
 
-import { image } from "framer-motion/client";
-
 export const projects = [
   {
     id: 1,
@@ -18,9 +16,9 @@ export const projects = [
         type: 'model_sheet',
         label: 'Model Sheet',
         images: [
-          '/projects/proyecto-1/model-sheet/ModeloFrontal.png',
-          '/projects/proyecto-1/model-sheet/ModeloPerfil.png',
-          '/projects/proyecto-1/model-sheet/ModeloPosterior.png',
+          '/proyecto-1/model-sheet/ModeloFrontal.png',
+          '/proyecto-1/model-sheet/ModeloPerfil.png',
+          '/proyecto-1/model-sheet/ModeloPosterior.png',
         ],
       },
       {
@@ -66,7 +64,7 @@ export const projects = [
       { type: 'model_sheet',      label: 'Model Sheet',      images: [] },
       { type: 'expression_sheet', label: 'Expression Sheet', images: [] },
       { type: 'dynamic_poses',    label: 'Poses Dinámicas',  images: [] },
-      { type: 'model_3d',         label: 'Modelo 3D',        images: [], modelFile: '/projects/proyecto-3/Pose_1_pj2.glb' },
+      { type: 'model_3d',         label: 'Modelo 3D',        images: [], modelFile: 'proyecto-3/Pose_1_pj2.glb' },
     ],
   },
   {
@@ -83,7 +81,7 @@ export const projects = [
       { type: 'model_sheet',      label: 'Model Sheet',      images: [] },
       { type: 'expression_sheet', label: 'Expression Sheet', images: [] },
       { type: 'dynamic_poses',    label: 'Poses Dinámicas',  images: [] },
-      { type: 'model_3d',         label: 'Modelo 3D',        images: [], modelFile: '/projects/proyect-4/Pose_1.glb' },
+      { type: 'model_3d',         label: 'Modelo 3D',        images: [], modelFile: '/proyect-4/Pose_1.glb' },
     ],
   },
 ]

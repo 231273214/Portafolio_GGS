@@ -39,7 +39,7 @@ export default function Navbar() {
 
         {/* Center logo */}
         <Link to="/" className="navbar__logo" aria-label="Good Gods — inicio">
-          <img src="/GOOD-GODS--BALNCO.png" alt="Good Gods" className="navbar__logo-img" />
+          <img src="/GOOD-GODS--BLANCO.png" alt="Good Gods" className="navbar__logo-img" />
         </Link>
 
         {/* Right links */}

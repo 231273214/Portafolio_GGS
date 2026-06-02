@@ -2,7 +2,7 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/public/LOGO_GOOD-GODS.svg" />
+    <link rel="icon" type="image/svg+xml" href="/LOGO_GOOD-GODS.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Good Gods — Diseño de personajes para animación, videojuegos y editoriales." />
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
@@ -10,12 +10,6 @@
   </head>
   <body>
     <div id="root"></div>
-      <script>
-        const redirect = sessionStorage.getItem('redirect');
-        if (redirect) {
-          sessionStorage.removeItem('redirect');
-          window.history.replaceState(null, '', '/Portafolio_GGS' + redirect);
-        }
-      </script>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
