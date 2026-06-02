@@ -1,6 +1,3 @@
-// src/data/projects.js
-// "sheets" acepta: model_sheet | expression_sheet | dynamic_poses | model_3d
-
 export const projects = [
   {
     id: 1,
