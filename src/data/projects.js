@@ -22,7 +22,14 @@ export const projects = [
       {
         type: 'expression_sheet',
         label: 'Expression Sheet',
-        images: [],
+        images: [
+          `${baseUrl}projects/proyect-1/Expresion-sheet/Expression1.png`,
+          `${baseUrl}projects/proyect-1/Expresion-sheet/Expression2.png`,
+          `${baseUrl}projects/proyect-1/Expresion-sheet/Expression3.png`,
+          `${baseUrl}projects/proyect-1/Expresion-sheet/Expression4.png`,
+          `${baseUrl}projects/proyect-1/Expresion-sheet/Expression5.png`,
+          `${baseUrl}projects/proyect-1/Expresion-sheet/Expression6.png`,
+        ],
       },
       {
         type: 'dynamic_poses',
@@ -59,8 +66,19 @@ export const projects = [
       'Creación de cast de 5 personajes para novela gráfica, con guía de estilo y paletas de color por personaje.',
     coverImage: null,
     sheets: [
-      { type: 'model_sheet',      label: 'Model Sheet',      images: [] },
-      { type: 'expression_sheet', label: 'Expression Sheet', images: [] },
+      { type: 'model_sheet',      label: 'Model Sheet',      images: [
+        `${baseUrl}projects/project-3/Model-sheet/ModelFrontal.png`,
+        `${baseUrl}projects/project-3/Model-sheet/ModelLateral.png`,
+        `${baseUrl}projects/project-3/Model-sheet/ModelPosterior.png`,
+      ] },
+      { type: 'expression_sheet', label: 'Expression Sheet', images: [
+         `${baseUrl}projects/project-3/Expresion-sheet/Expression1.png`,
+          `${baseUrl}projects/project-3/Expresion-sheet/Expression2.png`,
+          `${baseUrl}projects/project-3/Expresion-sheet/Expression3.png`,
+          `${baseUrl}projects/project-3/Expresion-sheet/Expression4.png`,
+          `${baseUrl}projects/project-3/Expresion-sheet/Expression5.png`,
+          `${baseUrl}projects/project-3/Expresion-sheet/Expression6.png`,
+      ] },
       { type: 'dynamic_poses',    label: 'Poses Dinámicas',  images: [] },
       { type: 'model_3d',         label: 'Modelo 3D',        images: [], modelFile: `${baseUrl}projects/project-3/Pose_1_pj2.glb` },
     ],
