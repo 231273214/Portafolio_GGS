@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { projects } from '../data/projects'
+const baseUrl = import.meta.env.BASE_URL
 import './Home.css'
 
 /* ── Imagen placeholder mientras no hay assets reales ─── */
@@ -91,9 +92,14 @@ export default function Home() {
               <Link to="/proyectos" className="btn btn--ghost">Ver todos los proyectos</Link>
             </div>
             <div className="projects-preview__cta">
-              <a href="/projects/Manual de uso.pdf" className="btn btn--ghost" target="_blank"  rel="noopener noreferrer">
-                Abrir manual de uso
-              </a>
+             <a 
+                  href={`${import.meta.env.BASE_URL}projects/Manual-de-uso.pdf`} 
+                  className="btn btn--ghost" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  Abrir manual de uso
+                </a>
             </div>
           </div>
           </div>
