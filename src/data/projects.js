@@ -88,16 +88,23 @@ export const projects = [
     year: 2026,
     description:
       'Este personaje se uso para un cortometraje animado de aventura y comedia donde este compañero usa su astucia y agilidad para infiltrarse en la megacorporación y rescatar a su colonia.',
-    coverImage: `${baseUrl}projects/project-4/Posedinamica.png`,
+    coverImage: `${baseUrl}projects/project-4/Pose_Dinamica/Posedinamica.png`,
     sheets: [
       { type: 'model_sheet',      label: 'Model Sheet',      images: [
-         `${baseUrl}projects/project-4/MOdelsheet.png`,
+        `${baseUrl}projects/project-4/Model_Sheet/ModelFrontal.png`,
+        `${baseUrl}projects/project-4/Model_Sheet/ModelLateral.png`,
+        `${baseUrl}projects/project-4/Model_Sheet/ModelPosterior.png`,
       ] },
       { type: 'expression_sheet', label: 'Expression Sheet', images: [
-        `${baseUrl}projects/project-4/Expressioni.png`,
+          `${baseUrl}projects/project-4/Expression_Sheet/Expression1.png`,
+          `${baseUrl}projects/project-4/Expression_Sheet/Expression2.png`,
+          `${baseUrl}projects/project-4/Expression_Sheet/Expression3.png`,
+          `${baseUrl}projects/project-4/Expression_Sheet/Expression4.png`,
+          `${baseUrl}projects/project-4/Expression_Sheet/Expression5.png`,
+          `${baseUrl}projects/project-4/Expression_Sheet/Expression6.png`,
       ] },
       { type: 'dynamic_poses',    label: 'Poses Dinámicas',  images: [
-        `${baseUrl}projects/project-4/Posedinamica.png`,
+        `${baseUrl}projects/project-4/Pose_Dinamica/Posedinamica.png`,
       ] },
       { type: 'model_3d',         label: 'Modelo 3D',        images: [], modelFile: `${baseUrl}projects/project-4/Pose_1.glb` },
     ],

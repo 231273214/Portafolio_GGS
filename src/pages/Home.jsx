@@ -52,7 +52,7 @@ export default function Home() {
               />
               
               <img 
-                src={`${baseUrl}projects/project-4/Posedinamica.png`} 
+                src={`${baseUrl}projects/project-4/Pose_Dinamica/Posedinamica.png`} 
                 alt="Imagen secundaria derecha" 
                 className="hero__img hero__img--right" 
               />
