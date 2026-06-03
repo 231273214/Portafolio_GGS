@@ -153,8 +153,9 @@
 .projects-preview { background: var(--color-surface); }
 
 .projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1.5rem;
   margin-bottom: 3rem;
 }
@@ -165,6 +166,8 @@
   border-radius: var(--radius-md);
   overflow: hidden;
   transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
+  width: 280px;       
+  flex-shrink: 0;      
 }
 .project-card:hover {
   transform: translateY(-5px);
@@ -416,4 +419,11 @@
 
 @media (max-width: 600px) {
   .hero__gallery { height: 240px; }
+}
+
+@media (max-width: 640px) {
+  .project-card {
+    width: 100%;
+    max-width: 320px;
+  }
 }

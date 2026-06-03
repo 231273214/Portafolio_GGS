@@ -86,10 +86,17 @@ export default function Home() {
             ))}
           </div>
 
-          <div className="projects-preview__cta">
-            <Link to="/proyectos" className="btn btn--ghost">Ver todos los proyectos</Link>
+          <div style={{ display: "flex", gap: "1rem", alignItems: "center", justifyContent: "center" }}>
+            <div className="projects-preview__cta">
+              <Link to="/proyectos" className="btn btn--ghost">Ver todos los proyectos</Link>
+            </div>
+            <div className="projects-preview__cta">
+              <a href="/projects/Manual de uso.pdf" className="btn btn--ghost" target="_blank"  rel="noopener noreferrer">
+                Abrir manual de uso
+              </a>
+            </div>
           </div>
-        </div>
+          </div>
       </section>
 
       {/* ── SERVICIOS ─────────────────────────────────── */}
